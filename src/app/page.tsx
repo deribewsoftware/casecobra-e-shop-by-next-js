@@ -1,3 +1,4 @@
+import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/maxWidthWrapper";
 import Phone from "@/components/phone";
 import { Check, Star } from "lucide-react";
@@ -86,6 +87,48 @@ font-bold
 
         </div>
       </MaxWidthWrapper>
+    </section>
+    {/* value proposition section */}
+    <section className="bg-slate-100 py-24">
+      <MaxWidthWrapper className="flex flex-col gap-16 items-center">
+        <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+          <h2 className=" order-1 mt-2 tracking-tight
+           text-center text-balance
+           !leading-tight font-bold text-5xl
+           md:text-6xl text-gray-900
+           ">What our <span className=" relative px-2">
+            customers
+            <Icons.underline className=" hidden sm:block absolute inset-x-0 pointer-events-none -bottom-6 text-green-500"/>
+            </span> {" "} say?</h2>
+            <img src="/snake-2.png" alt="" className="w-24 order-0 lg:order-2"/>
+        </div>
+        <div className="mx-auto grid grid-cols-1 max-w-2xl px-4 lg:max-w-none lg:grid-cols-2 gap-y-16">
+          <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+            <div className="flex gap-0.5 mb-2">
+              <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+              <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+              <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+              <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+              <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+            </div>
+            <div className="text-lg leading-8">
+              <p>"The case feels durable and I even got a compliment on the design. Had the case for two and a half months now and <span className=" p-0.5 bg-slate-800 text-white">the image is super clear</span>, on the case I had before, the image started fading into yellow-ish image after a couple weeks. love it. "</p>
+            </div>
+            <div className="flex gap-4 mt-2">
+              <img className=" rounded-full w-12 h-12 object-cover" src="/users/user-1.png" alt="user" />
+              <div className="flex flex-col">
+                <p className=" font-semibold">Jonathan</p>
+                <div className="flex gap-1.5 text-zinc-600 items-center">
+                <Check className=" h-4 w-4 stroke-[3px] text-green-600"/>
+                <p className="text-sm">Verified Purchase</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </MaxWidthWrapper>
+
     </section>
   </div>
   );
